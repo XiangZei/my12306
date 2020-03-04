@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.neu.my12306.activity.BookingFragment">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+
+            android:text="出发站"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:text="到达站"
+            android:textSize="35sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearLayout"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="81dp"
+                android:layout_alignParentLeft="true"
+                android:text="请选择"
+                android:gravity="center"
+                android:layout_marginTop="31dp"
+                android:textSize="20sp"
+
+                android:entries="@array/station_choice" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="74dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/spinner1"
+                android:background="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/spinner2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="请选择"
+
+                android:layout_height="81dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="31dp"
+                android:entries="@array/station_choice" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_below="@id/relativeLayout2"
+        android:id="@+id/linearLayout_startDate"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:paddingTop="3dp"
+            android:text="出发时间"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:id="@+id/book_date"
+            android:layout_width="match_parent"
+
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_toRightOf="@id/text3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:paddingTop="7dp"
+                android:text="2019" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingTop="7dp"
+                android:text="年" />
+
+            <TextView
+                android:id="@+id/tvMouth"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingTop="7dp"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:text="月" />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:paddingTop="7dp"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/sp_more"
+                android:paddingTop="7dp"
+                android:text="日" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/isHigh"
+        android:layout_below="@id/linearLayout_startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginLeft="20dp"
+        android:text="高铁" />
+    <Button
+        android:id="@+id/search_time_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isHigh"
+        android:text="查询"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+</RelativeLayout>

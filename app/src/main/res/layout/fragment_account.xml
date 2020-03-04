@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="用户名"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="姓名"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="证件类型"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/certificateType"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="证件号码"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/certificateNumber"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="乘客类型"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/passengerType"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="197dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:text="电话号码"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="30sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="TextView"
+
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/sp_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.09"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
