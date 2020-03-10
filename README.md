@@ -20,10 +20,10 @@ My12306 包含登录功能，时刻表查询功能，我的账户功能。
 
 实现了查询功能，获取数据功能，选择城市功能。
 
-<img src="images\查询.png" style="zoom:70%;" /> <img src="images\选择地点.png" style="zoom:70%;" /> <img src="images\显示车次.png" style="zoom:70%;" />
+<img src="images/查询.png" style="zoom:70%;" /> <img src="images/选择地点.png" style="zoom:70%;" /> <img src="images/显示车次.png" style="zoom:70%;" />
 
 ## 用户账户界面
 
 实现获取账户信息功能，更改账户信息功能。
 
-<img src="images\用户信息.png" style="zoom:70%;" />
+<img src="images/用户信息.png" style="zoom:70%;" />
